@@ -4,9 +4,11 @@ import jakarta.persistence.*;
 import lombok.Data;
 import java.time.LocalDateTime;
 
+
+//Table entity emails, columns for table emails:
 @Data
 @Entity
-@Table(name = "emails") //Email table og columns
+@Table(name = "emails")
 public class Email {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

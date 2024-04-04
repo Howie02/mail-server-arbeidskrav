@@ -4,9 +4,10 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 
+// Table entity for users, defining columns for user table.
 @Data
 @Entity
-@Table(name = "users") //User table and columns
+@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
